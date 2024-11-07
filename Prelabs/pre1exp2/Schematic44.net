@@ -1,0 +1,6 @@
+* Schematics Netlist *
+
+
+
+V_Voc         $N_0001 0 5.877V
+R_R8         $N_0001 0  1.824k  

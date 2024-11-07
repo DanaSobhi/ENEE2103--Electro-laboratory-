@@ -1,0 +1,102 @@
+
+**** 03/02/24 20:50:45 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Schematic44.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Mar 02 20:50:41 2024
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic44.net"
+
+**** INCLUDING Schematic44.net ****
+* Schematics Netlist *
+
+
+
+V_Voc         $N_0001 0 5.877V
+R_R8         $N_0001 0  1.824k  
+
+**** RESUMING Schematic44.cir ****
+.INC "Schematic44.als"
+
+
+
+**** INCLUDING Schematic44.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_Voc           Voc(+=$N_0001 -=0 )
+R_R8            R8(1=$N_0001 2=0 )
+.ENDALIASES
+
+
+**** RESUMING Schematic44.cir ****
+.probe
+
+
+.END
+
+**** 03/02/24 20:50:45 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Schematic44.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    5.8770                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Voc       -3.222E-03
+
+    TOTAL POWER DISSIPATION   1.89E-02  WATTS
+
+
+**** 03/02/24 20:50:45 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Schematic44.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

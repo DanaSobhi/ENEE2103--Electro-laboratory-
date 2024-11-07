@@ -1,0 +1,22 @@
+* C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Schematic1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Mar 02 14:29:47 2024
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+.INC "Schematic1.als"
+
+
+.probe
+
+
+.END

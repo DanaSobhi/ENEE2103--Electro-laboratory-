@@ -1,0 +1,104 @@
+
+**** 03/02/24 20:44:29 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Schematic43.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Mar 02 20:44:26 2024
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic43.net"
+
+**** INCLUDING Schematic43.net ****
+* Schematics Netlist *
+
+
+
+R_Rth         $N_0002 $N_0001 {1.824k*0.5+.001}
+V_Vth         $N_0002 0 5.877V
+R_Roc         0 $N_0001  1000MEG  
+
+**** RESUMING Schematic43.cir ****
+.INC "Schematic43.als"
+
+
+
+**** INCLUDING Schematic43.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_Rth           Rth(1=$N_0002 2=$N_0001 )
+V_Vth           Vth(+=$N_0002 -=0 )
+R_Roc           Roc(1=0 2=$N_0001 )
+.ENDALIASES
+
+
+**** RESUMING Schematic43.cir ****
+.probe
+
+
+.END
+
+**** 03/02/24 20:44:29 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Schematic43.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    5.8770                   ($N_0002)    5.8770                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vth       -5.877E-09
+
+    TOTAL POWER DISSIPATION   3.45E-08  WATTS
+
+
+**** 03/02/24 20:44:29 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Schematic43.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

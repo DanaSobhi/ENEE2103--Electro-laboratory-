@@ -1,0 +1,7 @@
+* Schematics Netlist *
+
+
+
+R_Rth         $N_0002 $N_0001 {1.824k*0.5+.001}
+V_Vth         $N_0002 0 5.877V
+R_Roc         0 $N_0001  1000MEG  
