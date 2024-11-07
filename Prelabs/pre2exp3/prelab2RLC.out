@@ -1,0 +1,140 @@
+
+**** 03/03/24 02:20:08 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\prelab2RLC.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Mar 03 02:20:04 2024
+
+
+
+** Analysis setup **
+.tran 0ns 10ms 0 10u
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "prelab2RLC.net"
+
+**** INCLUDING prelab2RLC.net ****
+* Schematics Netlist *
+
+
+
+L_L1         $N_0001 $N_0002  500mH  
+V_V1         $N_0003 0 DC 0 AC 0
++PULSE 0 5 1m 1n 1n 16.66m 33.33m
+C_C1         0 $N_0002  100nF  
+R_R3         $N_0003 $N_0001  750  
+
+**** RESUMING prelab2RLC.cir ****
+.INC "prelab2RLC.als"
+
+
+
+**** INCLUDING prelab2RLC.als ****
+* Schematics Aliases *
+
+.ALIASES
+L_L1            L1(1=$N_0001 2=$N_0002 )
+V_V1            V1(+=$N_0003 -=0 )
+C_C1            C1(1=0 2=$N_0002 )
+R_R3            R3(1=$N_0003 2=$N_0001 )
+.ENDALIASES
+
+
+**** RESUMING prelab2RLC.cir ****
+.probe
+
+
+.END
+
+**** 03/03/24 02:20:08 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\prelab2RLC.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                       
+
+($N_0003)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 03/03/24 02:20:08 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\prelab2RLC.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+**** 03/03/24 02:20:08 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\prelab2RLC.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                       
+
+($N_0003)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .05
+

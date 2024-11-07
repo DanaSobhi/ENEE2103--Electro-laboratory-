@@ -1,0 +1,8 @@
+* Schematics Netlist *
+
+
+
+C_Dana1200031         0 $N_0001  100n  
+R_R3         $N_0002 $N_0001  22k  
+V_V1         $N_0002 0 DC 0 AC 0
++PULSE 0 5 1m 1n 1n 10m 20m

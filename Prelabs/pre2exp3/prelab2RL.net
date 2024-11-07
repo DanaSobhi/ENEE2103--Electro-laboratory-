@@ -1,0 +1,8 @@
+* Schematics Netlist *
+
+
+
+R_R3         $N_0002 $N_0001  2.2k  
+L_L2         $N_0001 0  500mH  
+V_V1         $N_0002 0 DC 0 AC 0
++PULSE 0 10 1m 1n 1n 0.227m 0.454m

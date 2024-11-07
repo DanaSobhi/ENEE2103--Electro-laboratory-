@@ -1,0 +1,136 @@
+
+**** 03/02/24 23:12:26 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Schematic5Prelab2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Mar 02 23:01:02 2024
+
+
+
+** Analysis setup **
+.ac LIN 101 10 1.00K
+.tran 0ms 100ms 0 10u
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic5Prelab2.net"
+
+**** INCLUDING Schematic5Prelab2.net ****
+* Schematics Netlist *
+
+
+
+C_Dana1200031         0 $N_0001  100n  
+R_R3         $N_0002 $N_0001  22k  
+V_V1         $N_0002 0 DC 0 AC 0
++PULSE 0 5 1m 1n 1n 10m 20m
+
+**** RESUMING Schematic5Prelab2.cir ****
+.INC "Schematic5Prelab2.als"
+
+
+
+**** INCLUDING Schematic5Prelab2.als ****
+* Schematics Aliases *
+
+.ALIASES
+C_Dana1200031          Dana1200031(1=0 2=$N_0001 )
+R_R3            R3(1=$N_0002 2=$N_0001 )
+V_V1            V1(+=$N_0002 -=0 )
+.ENDALIASES
+
+
+**** RESUMING Schematic5Prelab2.cir ****
+.probe
+
+
+.END
+
+**** 03/02/24 23:12:26 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Schematic5Prelab2.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 03/02/24 23:12:26 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Schematic5Prelab2.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+WARNING -- No AC sources -- AC Sweep ignored
+**** 03/02/24 23:12:26 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Schematic5Prelab2.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .34
+

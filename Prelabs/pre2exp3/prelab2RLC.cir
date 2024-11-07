@@ -1,0 +1,23 @@
+* C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\prelab2RLC.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Mar 03 02:20:04 2024
+
+
+
+** Analysis setup **
+.tran 0ns 10ms 0 10u
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "prelab2RLC.net"
+.INC "prelab2RLC.als"
+
+
+.probe
+
+
+.END
