@@ -1,0 +1,184 @@
+
+**** 03/24/24 18:58:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N6.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Mar 24 18:58:40 2024
+
+
+
+** Analysis setup **
+.tran 0ns 250ms 0 10u
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Prelab6N6.net"
+
+**** INCLUDING Prelab6N6.net ****
+* Schematics Netlist *
+
+
+
+D_D1         $N_0001 0 D1N4002 
+D_D2         $N_0002 $N_0001 D1N4002 
+C_C1         $N_0003 $N_0001  1u  
+C_C3         0 $N_0002  1u  
+D_D3         $N_0004 $N_0002 D1N4002 
+C_C2         $N_0001 $N_0004  1u  
+V_V1         $N_0003 0  
++SIN 0 5 500 0 0 0
+
+**** RESUMING Prelab6N6.cir ****
+.INC "Prelab6N6.als"
+
+
+
+**** INCLUDING Prelab6N6.als ****
+* Schematics Aliases *
+
+.ALIASES
+D_D1            D1(1=$N_0001 2=0 )
+D_D2            D2(1=$N_0002 2=$N_0001 )
+C_C1            C1(1=$N_0003 2=$N_0001 )
+C_C3            C3(1=0 2=$N_0002 )
+D_D3            D3(1=$N_0004 2=$N_0002 )
+C_C2            C2(1=$N_0001 2=$N_0004 )
+V_V1            V1(+=$N_0003 -=0 )
+.ENDALIASES
+
+
+**** RESUMING Prelab6N6.cir ****
+.probe
+
+
+.END
+
+**** 03/24/24 18:58:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N6.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4002         
+          IS   14.110000E-09 
+           N    1.984        
+         ISR  100.000000E-12 
+         IKF   94.81         
+          BV  100.1          
+         IBV   10            
+          RS     .03389      
+          TT    4.761000E-06 
+         CJO   51.170000E-12 
+          VJ     .3905       
+           M     .2762       
+
+
+**** 03/24/24 18:58:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N6.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001) 86.73E-15                   ($N_0002) 173.4E-15                       
+
+($N_0003)    0.0000                   ($N_0004) 260.2E-15                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 03/24/24 18:58:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N6.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** DIODES
+
+
+NAME         D_D1        D_D2        D_D3      
+MODEL        D1N4002     D1N4002     D1N4002   
+ID           2.40E-20    2.40E-20    2.40E-20 
+VD           8.67E-14    8.67E-14    8.67E-14 
+REQ          3.61E+06    3.61E+06    3.61E+06 
+CAP          5.25E-11    5.25E-11    5.25E-11 
+**** 03/24/24 18:58:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N6.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001) 86.73E-15                   ($N_0002) 173.4E-15                       
+
+($N_0003)    0.0000                   ($N_0004) 260.2E-15                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            1.17
+

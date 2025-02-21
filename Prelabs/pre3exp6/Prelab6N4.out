@@ -1,0 +1,372 @@
+
+**** 03/24/24 06:23:15 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N4.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Mar 24 06:22:58 2024
+
+
+
+** Analysis setup **
+.tran 0ns 25ms 0 10u
+.STEP  V_V2 LIST 
++ 0,1.5,4
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Prelab6N4.net"
+
+**** INCLUDING Prelab6N4.net ****
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 0 DC 0 AC 0
++SIN 0 3 200 0 0 0
+V_V2         $N_0002 0 0
+R_R1         $N_0001 $N_0003  10k  
+D_D1         $N_0003 $N_0002 D1N4002 
+
+**** RESUMING Prelab6N4.cir ****
+.INC "Prelab6N4.als"
+
+
+
+**** INCLUDING Prelab6N4.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V1            V1(+=$N_0001 -=0 )
+V_V2            V2(+=$N_0002 -=0 )
+R_R1            R1(1=$N_0001 2=$N_0003 )
+D_D1            D1(1=$N_0003 2=$N_0002 )
+.ENDALIASES
+
+
+**** RESUMING Prelab6N4.cir ****
+.probe
+
+
+.END
+
+**** 03/24/24 06:23:15 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N4.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4002         
+          IS   14.110000E-09 
+           N    1.984        
+         ISR  100.000000E-12 
+         IKF   94.81         
+          BV  100.1          
+         IBV   10            
+          RS     .03389      
+          TT    4.761000E-06 
+         CJO   51.170000E-12 
+          VJ     .3905       
+           M     .2762       
+
+
+**** 03/24/24 06:23:15 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N4.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V2 =    0     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                       
+
+($N_0003)-2.742E-21                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.742E-25
+    V_V2         2.742E-25
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 03/24/24 06:23:15 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N4.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V2 =    0     
+
+
+******************************************************************************
+
+
+
+
+
+
+**** DIODES
+
+
+NAME         D_D1      
+MODEL        D1N4002   
+ID           0.00E+00 
+VD          -2.74E-21 
+REQ          3.61E+06 
+CAP          5.25E-11 
+**** 03/24/24 06:23:15 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N4.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V2 =    0     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    0.0000                       
+
+($N_0003)-2.742E-21                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.742E-25
+    V_V2         2.742E-25
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 03/24/24 06:23:15 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N4.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V2 =    1.5   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    1.5000                       
+
+($N_0003) 142.6E-06                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.426E-08
+    V_V2        -1.426E-08
+
+    TOTAL POWER DISSIPATION   2.14E-08  WATTS
+
+
+**** 03/24/24 06:23:15 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N4.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V2 =    1.5   
+
+
+******************************************************************************
+
+
+
+
+
+
+**** DIODES
+
+
+NAME         D_D1      
+MODEL        D1N4002   
+ID          -1.43E-08 
+VD          -1.50E+00 
+REQ          1.13E+11 
+CAP          3.31E-11 
+**** 03/24/24 06:23:15 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N4.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V2 =    1.5   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    1.5000                       
+
+($N_0003) 142.6E-06                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.426E-08
+    V_V2        -1.426E-08
+
+    TOTAL POWER DISSIPATION   2.14E-08  WATTS
+
+
+**** 03/24/24 06:23:15 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N4.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V2 =    4     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    4.0000                       
+
+($N_0003) 143.1E-06                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.431E-08
+    V_V2        -1.431E-08
+
+    TOTAL POWER DISSIPATION   5.72E-08  WATTS
+
+
+**** 03/24/24 06:23:15 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N4.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V2 =    4     
+
+
+******************************************************************************
+
+
+
+
+
+
+**** DIODES
+
+
+NAME         D_D1      
+MODEL        D1N4002   
+ID          -1.43E-08 
+VD          -4.00E+00 
+REQ          2.09E+11 
+CAP          2.62E-11 
+**** 03/24/24 06:23:15 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N4.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     V_V2 =    4     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)    4.0000                       
+
+($N_0003) 143.1E-06                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.431E-08
+    V_V2        -1.431E-08
+
+    TOTAL POWER DISSIPATION   5.72E-08  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .30
+

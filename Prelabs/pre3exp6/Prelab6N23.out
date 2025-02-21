@@ -1,0 +1,175 @@
+
+**** 03/24/24 04:34:51 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N23.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Mar 24 04:34:47 2024
+
+
+
+** Analysis setup **
+.tran 0ns 120ms 0 10u
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Prelab6N23.net"
+
+**** INCLUDING Prelab6N23.net ****
+* Schematics Netlist *
+
+
+
+V_V2         $N_0001 0 DC 0.53 AC 0
++SIN 0 5 200 0 0 0
+D_D1         $N_0001 1200031_Dana D1N4002 
+R_R1         0 1200031_Dana  10k  
+C_C1         0 1200031_Dana  47uF  
+
+**** RESUMING Prelab6N23.cir ****
+.INC "Prelab6N23.als"
+
+
+
+**** INCLUDING Prelab6N23.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V2            V2(+=$N_0001 -=0 )
+D_D1            D1(1=$N_0001 2=1200031_Dana )
+R_R1            R1(1=0 2=1200031_Dana )
+C_C1            C1(1=0 2=1200031_Dana )
+_    _(1200031_Dana=1200031_Dana)
+.ENDALIASES
+
+
+**** RESUMING Prelab6N23.cir ****
+.probe
+
+
+.END
+
+**** 03/24/24 04:34:51 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N23.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4002         
+          IS   14.110000E-09 
+           N    1.984        
+         ISR  100.000000E-12 
+         IKF   94.81         
+          BV  100.1          
+         IBV   10            
+          RS     .03389      
+          TT    4.761000E-06 
+         CJO   51.170000E-12 
+          VJ     .3905       
+           M     .2762       
+
+
+**** 03/24/24 04:34:51 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N23.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)     .5300                   (1200031_Dana)     .1670              
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -1.670E-05
+
+    TOTAL POWER DISSIPATION   8.85E-06  WATTS
+
+
+**** 03/24/24 04:34:51 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N23.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** DIODES
+
+
+NAME         D_D1      
+MODEL        D1N4002   
+ID           1.67E-05 
+VD           3.63E-01 
+REQ          3.07E+03 
+CAP          1.63E-09 
+**** 03/24/24 04:34:51 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N23.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   (1200031_Dana) 2.730E-21              
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -2.730E-25
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .45
+

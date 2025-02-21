@@ -1,0 +1,9 @@
+* Schematics Netlist *
+
+
+
+V_V2         $N_0001 0 DC 0.53 AC 0
++SIN 0 5 200 0 0 0
+D_D1         $N_0001 1200031_Dana D1N4002 
+R_R1         0 1200031_Dana  10k  
+C_C1         0 1200031_Dana  47uF  

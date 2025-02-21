@@ -1,0 +1,25 @@
+* C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\Prelab6N4.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sun Mar 24 06:22:58 2024
+
+
+
+** Analysis setup **
+.tran 0ns 25ms 0 10u
+.STEP  V_V2 LIST 
++ 0,1.5,4
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Prelab6N4.net"
+.INC "Prelab6N4.als"
+
+
+.probe
+
+
+.END
