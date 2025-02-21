@@ -1,0 +1,23 @@
+* C:\Users\CS Net Games\Desktop\4th 2ndSem\Electro lab\circuits\CCollecter.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Mar 30 03:23:10 2024
+
+
+
+** Analysis setup **
+.tran 0ns 50ms 0 11u
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "CCollecter.net"
+.INC "CCollecter.als"
+
+
+.probe
+
+
+.END
